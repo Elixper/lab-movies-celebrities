@@ -1,0 +1,20 @@
+<h1>Edit</h1>
+<form
+  method="post"
+  action="/celebrities/{{celebrity.id}}/edit"
+  enctype="multipart/form-data"
+  class="form">
+
+  <h1 class="title">Edit this Celebrity!</h1>
+
+  <label for="name" class="name">Name</label>
+  <input class="input" type="text" id="name" name="name" placeholder="{{celebrity.name}}" />
+
+  <label for="occupation" class="occupation">Occupation</label>
+  <input class="input" type="text" id="occupation" name="occupation" placeholder="{{celebrity.occupation}}" />
+
+  <label for="catchPhrase" class="catchPhrase">CatchPhrase</label>
+  <input class="input" type="text" id="catchPhrase" name="catchPhrase" placeholder="{{celebrity.catchPhrase}}"/>
+
+  <button class="btn" type="submit">Edit!</button>
+</form>

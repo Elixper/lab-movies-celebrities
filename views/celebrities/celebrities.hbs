@@ -1,0 +1,15 @@
+<h1>Welcome to your celebrity list!</h1>
+
+
+{{#each celebrities}}
+<ul>
+    <li>Celebrity Name: {{this.name}}</li>
+    <li>Occupation: {{this.occupation}}</li>
+    <li>A catchphrase: {{this.catchPhrase}}</li>
+    <a href="/celebrities/{{this._id}}/edit">Edit</a> //
+    <a href="/celebrities/{{this._id}}/delete">Delete</a>
+</ul>
+<hr>
+{{/each}}
+
+<a href="/celebrities/new">Create a new celebrity</a>

@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+
 // Express View engine setup
 
 app.set("views", path.join(__dirname, "views"));
@@ -33,5 +34,7 @@ app.locals.title = "Express - Generated with IronGenerator";
 //      |  |  |
 //      V  V  V
 app.use("/", require("./routes/index.routes"));
+app.use("/celebrities", require("./routes/celebrities.routes"));
+// app.use("/movies", require("./routes/movies.routes"));
 
 module.exports = app;
