@@ -4,10 +4,10 @@
 {{#each celebrities}}
 <ul>
     <li>Celebrity Name: {{this.name}}</li>
-    <li>Occupation: {{this.occupation}}</li>
-    <li>A catchphrase: {{this.catchPhrase}}</li>
     <a href="/celebrities/{{this._id}}/edit">Edit</a> //
+    <a href="/celebrities/celebrity-details/{{this._id}}">Details</a> //
     <a href="/celebrities/{{this._id}}/delete">Delete</a>
+    
 </ul>
 <hr>
 {{/each}}
